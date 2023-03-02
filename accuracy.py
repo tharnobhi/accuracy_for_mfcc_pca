@@ -10,7 +10,7 @@ X = data.iloc[:, :-1]
 y = data.iloc[:, -1]
 
 # Perform K-means clustering with 3 clusters
-kmeans = KMeans(n_clusters=3, random_state=0).fit(X)
+kmeans = KMeans(n_clusters=3, random_state=8).fit(X)
 
 # Extract the cluster labels
 labels = kmeans.labels_
